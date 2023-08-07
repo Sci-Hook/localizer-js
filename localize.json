@@ -1,0 +1,14 @@
+{
+    "langs": [
+        "en",
+        "tr"
+    ],
+    "input-dir": "i18n",
+    "output-file": "output.json",
+    "files": {
+        "messages": "messages",
+        "text": "text"
+    },
+    "schema": "schema.json",
+    "global": true
+}

@@ -1,0 +1,12 @@
+{
+    "en": {
+        "text": {
+            "test": "hello"
+        }
+    },
+    "tr": {
+        "text": {
+            "test": "merhaba"
+        }
+    }
+}
