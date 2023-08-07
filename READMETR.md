@@ -14,11 +14,11 @@ Komutu çalıştırdıktan sonra paketin son sürümü, otomatik olarak "node_mo
 
 Araç, kullanımı oldukça kolay ve hızlı olacak şekilde geliştirilmiştir. Komut satırına `localize` yazarak kullanmaya başlayabilirsiniz.
 
-`$ localize compile`
+`$ npx localize compile`
 
 Yukarıda belirtilen komut ile verilmiş olan girdilerin tek bir dosya olarak derlenmesi sağlanır. Komut, `--config` veya `-c` olarak belirtilen bir parametre almaktadır. Aşağıda buna bir örnek verilmiştir:
 
-`$ localize compile --config config.json`
+`$ npx localize compile --config config.json`
 
 Yukarıda gördüğünüz komut, `--config` parametresinde belirtilen `config.json` dosyasından aldığı bilgiler ile derleme işlemini gerçekleştirir.
 
@@ -40,7 +40,7 @@ Yukarıda gördüğünüz komut, `--config` parametresinde belirtilen `config.js
 }
 ```
 
-Yukarıda bir konfigrasyon örneği verilmiştir.
+Yukarıda bir konfigürasyon örneği verilmiştir.
 
 | Seçenekler | Açıklama                 |
 | ------------- | ------------------------------ |
@@ -75,7 +75,7 @@ Yukarıda `files` içerisinde belirtilen `messages` ve `text` için birer klasö
 
 ## Çıktı Alma
 
-`$ localize compile --config config.json`
+`$ npx localize compile --config config.json`
 
 Yukarıdaki komudu çalıştırdığınızda `config.json` içerisinde belirtilmiş olan `output-file` seçeneğinde belirtilen JSON dosyası içerisine çıktı verilir. Çıktı aşağıdaki gibi gözükmektedir:
 
