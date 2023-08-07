@@ -42,11 +42,11 @@ require("syncforeachloop");
 var prefix = '[' + chalk.cyanBright('localize') + ']';
 var messages = {
     error: {
-        config_is_not_json: "Config bir json olmalıdır.",
-        config_cannot_read: "Config oluşturulmamış ya da okunamayan bir formatta.",
-        config_is_invalid_json: "Config geçerli bir json fromatında değil.",
-        required_config_option_is_not_assigned: "Gerekli bir config özelliği atanmamış. Atanmayan değer: {value}",
-        required_config_option_is_assigned_invalid_type: "Özellik hatalı türde atanmış. Hatalı değer: {value}"
+        config_is_not_json: "Config must be a JSON file.",
+        config_cannot_read: "Config not created or in an unreadable format.",
+        config_is_invalid_json: "Config is not in a valid JSON format.",
+        required_config_option_is_not_assigned: "A required config property is not assigned. Unassigned value: {value}",
+        required_config_option_is_assigned_invalid_type: "The property is assigned an incorrect type. Incorrect value: {value}"
     }
 };
 function assign_values(msg, values) {
