@@ -47,6 +47,9 @@ var messages = {
         config_is_invalid_json: "Config is not in a valid JSON format.",
         required_config_option_is_not_assigned: "A required config property is not assigned. Unassigned value: {value}",
         required_config_option_is_assigned_invalid_type: "The property is assigned an incorrect type. Incorrect value: {value}"
+    },
+    success: {
+        compiling_successfully: "Compiled successfully. Output file: {output_file}"
     }
 };
 function assign_values(msg, values) {
@@ -76,7 +79,12 @@ function log_message(type, message, values) {
                     msg = _a.sent();
                     _a.label = 2;
                 case 2:
-                    console.log(prefix + ' ' + chalk.red(msg));
+                    if (type == 'error') {
+                        console.log(prefix + ' ' + chalk.red(msg));
+                    }
+                    if (type == 'success') {
+                        console.log(prefix + ' ' + chalk.green(msg));
+                    }
                     _a.label = 3;
                 case 3: return [2 /*return*/];
             }

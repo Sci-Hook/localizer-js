@@ -57,7 +57,7 @@ function read_lang_files(config) {
                     return __generator(this, function (_a) {
                         switch (_a.label) {
                             case 0:
-                                file = "".concat(input_dir, "/").concat(name, "/").concat(lang, ".json");
+                                file = "".concat(input_dir, "/").concat(config['files'][name], "/").concat(lang, ".json");
                                 return [4 /*yield*/, (0, json_parse_1.json_parse)(file)];
                             case 1:
                                 data = _a.sent();

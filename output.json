@@ -1,12 +1,1 @@
-{
-    "en": {
-        "text": {
-            "test": "hello"
-        }
-    },
-    "tr": {
-        "text": {
-            "test": "merhaba"
-        }
-    }
-}
+{"en":{"messages":{"test":"b"}},"tr":{"messages":{"test":"a"}}}

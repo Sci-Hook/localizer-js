@@ -21,7 +21,7 @@ export function read_lang_files(config:config_type) {
             
             file_names.syncForEach(async function (name,next_name) {
 
-                var file = `${input_dir}/${name}/${lang}.json`;
+                var file = `${input_dir}/${config['files'][name]}/${lang}.json`;
                 var data = await json_parse(file);
 
                 if (lang == 'global') {

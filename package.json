@@ -1,11 +1,11 @@
 {
     "name": "localizer-js",
-    "version": "1.0.3-beta",
+    "version": "1.0.6-beta",
     "description": "Language support development tool for apps.",
     "main": "./bin/index.js",
     "scripts": {
         "tsc": "tsc ./src/index.ts --outDir ./bin -w",
-        "compile":"tsc ./src/index.ts --outDir ./bin",
+        "compile": "tsc ./src/index.ts --outDir ./bin",
         "nodemon": "nodemon ./bin/index.js"
     },
     "keywords": [
@@ -25,7 +25,7 @@
         "syncforeachloop": "^0.0.1",
         "typescript": "^5.1.6"
     },
-    "bin":{
-        "localize":"./bin/index.js"
+    "bin": {
+        "localize": "./bin/index.js"
     }
 }

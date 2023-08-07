@@ -41,6 +41,7 @@ var get_the_config_1 = require("../utils/get-the-config");
 var validate_config_1 = require("../utils/validate-config");
 var read_lang_files_1 = require("../functions/read-lang-files");
 var fs_1 = require("fs");
+var log_message_1 = require("../utils/log-message");
 function compile(option) {
     return __awaiter(this, void 0, void 0, function () {
         var config_file, config, status, result;
@@ -57,6 +58,7 @@ function compile(option) {
                     return [4 /*yield*/, (0, read_lang_files_1.read_lang_files)(config)];
                 case 1:
                     result = _a.sent();
+                    (0, log_message_1.log_message)('success', 'compiling_successfully', { output_file: config['output-file'] });
                     (0, fs_1.writeFileSync)(process.cwd() + '/' + config['output-file'], JSON.stringify(result));
                     return [2 /*return*/];
             }

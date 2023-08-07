@@ -10,6 +10,9 @@ const messages = {
         config_is_invalid_json:"Config is not in a valid JSON format.",
         required_config_option_is_not_assigned:"A required config property is not assigned. Unassigned value: {value}",
         required_config_option_is_assigned_invalid_type:"The property is assigned an incorrect type. Incorrect value: {value}"
+    },
+    success:{
+        compiling_successfully:"Compiled successfully. Output file: {output_file}"
     }
 }
 
@@ -32,11 +35,16 @@ export async function log_message(type:'error'|'success'|'info',message,values?)
     
     if (message) {
         var msg:string = messages_in_type[message];
+
         if (values) {
             msg = await assign_values(msg,values);
         }
-
-        console.log(prefix + ' ' + chalk.red(msg))
+        if (type == 'error') {
+            console.log(prefix + ' ' + chalk.red(msg))
+        }
+        if(type == 'success'){
+            console.log(prefix + ' ' + chalk.green(msg))
+        }
 
     }
 }
