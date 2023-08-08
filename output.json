@@ -1,14 +1,1 @@
-{
-    "en": {
-        "messages": {
-            "test": "b",
-            "merhaba": "a",
-            "yumurta": "b"
-        }
-    },
-    "tr": {
-        "messages": {
-            "test": "a"
-        }
-    }
-}
+{"en":{"messages":{"test":"selam","merhaba":"a","yumurta":"b","tost":"a","most":"asdfadsf"},"test":{"test":"hello"}},"tr":{"messages":{"test":"a"},"test":{"test":"merhaba"}}}

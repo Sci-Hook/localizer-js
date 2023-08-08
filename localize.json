@@ -6,7 +6,8 @@
     "input-dir": "i18n",
     "output-file": "output.json",
     "files": {
-        "messages": "messages"
+        "messages": "messages",
+        "test":"test"
     },
     "schema": "schema.json",
     "global": true

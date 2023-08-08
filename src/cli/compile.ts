@@ -3,7 +3,7 @@ import { validate_config } from '../utils/validate-config';
 import { read_lang_files } from '../functions/read-lang-files';
 import { writeFileSync } from 'fs';
 import { log_message } from '../utils/log-message';
-import { watch_file } from '../functions/watcher';
+import { watch_file,watch_config } from '../functions/watcher';
 
 export async function create_output(config) {
     var result = await read_lang_files(config);
@@ -19,6 +19,7 @@ export async function compile(option) {
     if (!status) return;
     create_output(config);
     if (option.watch) {
-        watch_file(config);   
+        watch_config(config_file);
+        watch_file(config);
     }
 }

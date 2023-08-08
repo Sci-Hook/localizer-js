@@ -72,6 +72,7 @@ function compile(option) {
                 return [2 /*return*/];
             create_output(config);
             if (option.watch) {
+                (0, watcher_1.watch_config)(config_file);
                 (0, watcher_1.watch_file)(config);
             }
             return [2 /*return*/];
