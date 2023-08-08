@@ -34,7 +34,8 @@ export function watch_file(config) {
     file_names.syncForEach(function (name, next_name) {
         langs.syncForEach(function (lang, next_lang) {
 
-            var file_name = process.cwd() + '/' + config['input-dir'] + '/' + name + '/' + lang + '.json';
+
+            var file_name = process.cwd() + '/' + config['input-dir'] + '/' + files[name] + '/' + lang + '.json';
 
             if (watched_files.indexOf(file_name) == -1) {
                 watched_files.push(file_name);

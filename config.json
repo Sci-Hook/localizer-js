@@ -1,0 +1,17 @@
+{
+    "langs": [
+        "en-us",
+        "tr-tr"
+    ],
+    "input-dir": "i18n",
+    "output-file": "output.json",
+    "files": {
+        "static_texts":"static-texts",
+        "site_texts":"site-texts",
+        "link_texts":"link-texts",
+        "alt_text":"alt-texts",
+        "component_texts":"component-texts",
+        "image_sources":"image-sources"
+    },
+    "global": true
+}

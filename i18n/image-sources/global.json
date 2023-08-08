@@ -1,0 +1,18 @@
+{
+    "org_logos": {
+        "main_logo_120": "/static/images/branding/logos/plain-logos/main-text-logo-120px.png"
+    },
+    "brand_logos": {
+        "github_logo": "/static/images/branding/logos/social-medias/github-mark.png",
+        "x_logo": "/static/images/branding/logos/social-medias/x.png",
+        "threads_logo": "/static/images/branding/logos/social-medias/threads.png",
+        "youtube_logo": "/static/images/branding/logos/social-medias/youtube.png"
+    },
+    "image_1": "/static/images/icons/flasks.png",
+    "image_2": "/static/images/icons/tools.png",
+    "image_3": "/static/images/icons/academy.png",
+    "image_4": "/static/images/illustrations/learn.png",
+    "image_5": "/static/images/illustrations/projects.png",
+    "image_6": "/static/images/illustrations/academy-student.png",
+    "image_7": "/static/images/branding/logos/bilimetri/main-logo.png"
+}
