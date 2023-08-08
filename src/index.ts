@@ -7,9 +7,14 @@ const program = new Command();
 import {compile} from './cli/compile';
 // commands
 
+  
+
 program.command('compile')
     .description('Converts the files in the input folder into a single file output.')
     .requiredOption('-c,--config <char>', 'config file.')
+    .option('-w, --watch','Automatically saves changes.')
     .action(compile);
+
+    
 
 program.parse();

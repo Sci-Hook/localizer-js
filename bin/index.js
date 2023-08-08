@@ -9,5 +9,6 @@ var compile_1 = require("./cli/compile");
 program.command('compile')
     .description('Converts the files in the input folder into a single file output.')
     .requiredOption('-c,--config <char>', 'config file.')
+    .option('-w, --watch', 'Automatically saves changes.')
     .action(compile_1.compile);
 program.parse();
