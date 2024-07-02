@@ -22,7 +22,7 @@
         "@types/node": "^20.4.8",
         "chalk": "^4.0.0",
         "commander": "^11.0.0",
-        "syncforeachloop": "^0.0.1",
+        "syncforeachloop": "^1.0.2",
         "typescript": "^5.1.6"
     },
     "bin": {
